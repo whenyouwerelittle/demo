@@ -19,6 +19,7 @@ import java.time.LocalDateTime;
 @EntityListeners(AuditingEntityListener.class)
 @ToString
 public class BaseEntity {
+    // 엔터티들의 공통값을 저장해 두는 곳
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
