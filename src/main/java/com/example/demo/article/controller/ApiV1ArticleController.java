@@ -31,7 +31,7 @@ public class ApiV1ArticleController {
         return "modify";
     }
 
-    @DeleteMapping()
+    @DeleteMapping("/{id}")
     public String delete(){
         return "delete";
     }
